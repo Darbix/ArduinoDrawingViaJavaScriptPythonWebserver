@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+
+html *{
+    font-family: "Comfortaa";
+}
+body{
+    background: #22222D;
+    margin-top: 15px;
+    font-family: "Comfortaa";
+}
+#canvas{
+    width: 650px;
+    height: 650px;
+    margin: 20px auto;
+    display: block;
+    background: #dadaea;
+
+    border: 10px solid;
+    border-color: #525266;
+    box-shadow: 5px 5px 50px 10px rgba(0,0,0,0.75); 
+}
+#panel{
+    position: absolute;
+    top: 0;
+    width: 120px;
+    margin: 20px 5px;
+}
+.button{
+    width: 115px;
+    height: 44px;
+    margin-bottom: 5px;
+    background: #1a9fda;
+
+    border-radius: 22px;
+    border-width: 0;
+
+    text-align: center;
+    color: #22222D;
+    font-size: 18px;
+    font-weight: bold;
+}
+.button:hover{
+    transition: 0.1s linear;
+    background: #60c0e0;
+}
+#multiclientButton{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background: #ff4d63;
+    opacity: 0.4;
+    width: 95px;
+}
+.coord{
+    height: 30px;
+    margin-top: 10px;
+
+    color: #ff4d63;
+    font-size: 22px;
+}
+.coord > div{
+    text-align: left;
+    width: 70px;
+    float: right;
+}
+#siftQuantText{
+    margin: 10px 5px 4px 0;
+    text-align: center;
+    color: #ddddee;
+    font-size: 17px;
+}
+#inputSiftQuant{
+    width: 115px;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 4px 4px 4px 7px;
+    background-color: #dadaea;
+
+    border-radius: 7px;
+    border: 4px solid #525266;
+
+    color: #525266;
+    font-size: 18px;
+}
+#showPointsText{
+    text-align: center;
+    color: #ddddee;
+    font-size: 15px;
+}
+#inputPoints{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.cell{
+    flex: 0 0 33%;
+    height: 40px;
+}
+#grid > button{
+    background: #1a9fda;
+    margin-bottom: 1px;
+
+    border-radius: 20px;
+    border: 0;
+
+    color: #22222D;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#grid > button:hover{
+    transition: 0.1s linear;
+    background: #60c0e0;
+}
+#statusBar{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 20px;
+
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#responseBar{
+    position: fixed;
+    bottom: 0;
+    margin: 15px;
+    color: yellow;
+    font-size: 30px;
+}
+#responseText{
+    font-size: 18px;
+    margin-left: 10px;
+}
+

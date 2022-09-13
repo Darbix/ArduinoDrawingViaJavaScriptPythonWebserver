@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <div id="panel">
+            <button class="button" onclick="moveToHome();">HOME</button>
+            <button class="button" onclick="connect();">&circlearrowright;&thinsp;COM4</button>
+            <button class="button" onclick="clearCanvas();">CLEAR</button>
+
+            <div>
+                <div class="coord">
+                    X = <div id="valX">0.0000</div>
+                </div>
+                <div class="coord">
+                    Y = <div id="valY">0.0000</div>
+                </div>
+            </div>
+
+            <div id="siftQuantText">Sift quantity</div>
+            <input id="inputSiftQuant" type="number" onchange="siftQuantChanged();"/>
+            <span id="showPointsText">Show points<input type="checkbox" id="inputPoints" onchange="showPointsChanged();"/>
+            </span>
+            <br></br>
+            <span id="showPointsText">Save home:</span>
+
+            <div id="grid">
+                <div class="cell"></div>
+                <button class="cell" onclick="move('up');">&blacktriangle;</button>
+                <div class="cell"></div>
+                <button class="cell" onclick="move('left');">&blacktriangleleft;</button>
+                <button class="cell" onclick="saveHome('saveHomeButton');" id="saveHomeButton">&#9678;</button>
+                <button class="cell" onclick="move('right');">&blacktriangleright;</button>
+                <div class="cell"></div>
+                <button class="cell" onclick="move('down');">&blacktriangledown;</button>
+                <div class="cell"></div>
+            </div>
+        </div>
+
+        <button class="button" id="multiclientButton" onclick="switchMulticlient('multiclientButton')">sharing</button>
+
+        <div id="statusBar"></div>
+        <div id="responseBar"><span id="responseText"></span></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
